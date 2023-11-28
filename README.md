@@ -1,7 +1,6 @@
 # Skhd / Yabai
 
 ## Applications
-## Fullscreen
 | Action        | Key Combination                                                      |
 | ------------- | -------------------------------------------------------------------- |
 | Terminal      | <kbd>lalt</kbd> + <kbd>return</kbd>                                  |
