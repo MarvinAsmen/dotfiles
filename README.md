@@ -18,10 +18,10 @@
 ### Direction
 | Action             | Key Combination                                  |
 | ------------------ | ------------------------------------------------ |
-| Move window left  | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>h</kbd> |
-| Move window down  | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>j</kbd> |
-| Move window up    | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>k</kbd> |
-| Move window right | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>l</kbd> |
+| Move window left   | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>h</kbd> |
+| Move window down   | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>j</kbd> |
+| Move window up     | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>k</kbd> |
+| Move window right  | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>l</kbd> |
 
 ### Flip
 | Action               | Key Combination                                   |
@@ -68,3 +68,10 @@
 | ----------------- | --------------------------------------------------|
 | Fullscreen        | <kbd>lalt</kbd> + <kbd>f</kbd>                    |
 | Native fullscreen | <kbd>shift</kbd> + <kbd>lalt</kbd> + <kbd>f</kbd> |
+
+# Neovim
+| Action                | Key Combination                                                      |
+| --------------------- | -------------------------------------------------------------------- |
+| Leader Key            | <kbd>space</kbd>                                                     |
+| Open file explorer    | <kbd>space</kbd> + <kbd>e</kbd>                                      |
+| Comment line          | <kbd>space</kbd> + <kbd>/</kbd>                                      |
