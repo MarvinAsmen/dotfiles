@@ -1,0 +1,74 @@
+#!/usr/bin/env sh
+
+# === applications ===
+#lalt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
+lalt - return : open -n -a "Alacritty"
+
+
+
+# === focus ===
+lalt - h : yabai -m window --focus west
+lalt - j : yabai -m window --focus south
+lalt - k : yabai -m window --focus north
+lalt - l : yabai -m window --focus east
+
+
+
+# === movement ===
+# - directions
+shift + lalt - h : yabai -m window --warp west
+shift + lalt - j : yabai -m window --warp south
+shift + lalt - k : yabai -m window --warp north
+shift + lalt - l : yabai -m window --warp east
+
+# - flip
+shift + lalt - x : yabai -m space --mirror x-axis
+shift + lalt - y : yabai -m space --mirror y-axis
+
+# - rotation
+lalt - r         : yabai -m space --rotate 90
+shift + lalt - r : yabai -m space --rotate 270
+
+
+
+# === spaces ===
+shift + lalt - m : yabai -m window --space last && yabai -m space --focus last
+shift + lalt - p : yabai -m window --space prev && yabai -m space --focus prev
+shift + lalt - n : yabai -m window --space next && yabai -m space --focus next
+shift + lalt - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+shift + lalt - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+shift + lalt - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+shift + lalt - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+shift + lalt - 5 : yabai -m window --space 5 && yabai -m space --focus 5
+shift + lalt - 6 : yabai -m window --space 6 && yabai -m space --focus 6
+
+
+
+# === resizing ===
+lctrl + lalt - h : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
+lctrl + lalt - j : yabai -m window --resize bottom:0:20 ; yabai -m window --resize top:0:20
+lctrl + lalt - k : yabai -m window --resize top:0:-20 ; yabai -m window --resize bottom:0:-20
+lctrl + lalt - l : yabai -m window --resize right:20:0 ; yabai -m window --resize left:20:0
+lctrl + lalt - e : yabai -m space --balance
+lctrl + lalt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+
+
+# === floating ===
+shift + lalt - space : yabai -m window --toggle float
+shift + lalt - c : yabai -m window --toggle float; yabai -m window --grid 4:4:1:1:2:2
+
+
+
+# === fullscreen ===
+lalt - f         : yabai -m window --toggle zoom-fullscreen
+shift + lalt - f : yabai -m window --toggle native-fullscreen
+
+
+
+# === restart yabai ===
+shift + lctrl + lalt - r : 
+    /usr/bin/env osascript <<< \
+        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
+    launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
